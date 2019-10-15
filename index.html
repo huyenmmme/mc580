@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+  <link rel="stylesheet" href="css/template.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="heroimg">
+    <img src="20160809_AndersonHall.EN.jpg" alt="Anderson-Hall">
+      <p class="photog">Photo Credit: </p>
+    <h1 id="arthed">K-State has largest fall enrollment dip of all state universities in Kansas</h1>
+    </div>
+    <p><b>By Kaylie Mclaughlin</b></p>
+    <p class="date">Oct 2, 2019</p>
+    <p>For the sixth consecutive fall semester, Kansas State enrollment decreased. This semester, however, K-State saw the biggest decrease in full-time equivalent enrollment of any state university in Kansas, according to preliminary data collected by the Kansas Board of Regents.</p>
+
+    <p>Across the board, the Regents recorded a loss of 726 full-time equivalent students. K-State accounts for more than 550 students in that drop.</p>
+
+    <p>In the full-time equivalent count across the system, the Regents recorded a less than 1 percent decrease. K-State recorded a 3.12 percent decrease.</p>
+
+    <p>According to the press release, Fort Hays State and Wichita State recorded small increases at .94 percent and .99 percent respectively.</p>
+
+    <p>In terms of total headcount enrollment, K-State and the University of Kansas were the only state universities in the system to record decreases. K-State fell 2.3 percent and KU fell .75 percent, according to a Regents press release.</p>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script type="text/javascript">
+Highcharts.chart('container', {
+chart: {
+  type: 'line'
+},
+title: {
+  text: 'Fall Preliminary (20th Day) Enrollment Summary'
+},
+subtitle: {
+  text: 'Source: KANSAS BOARD OF REGENTS'
+},
+xAxis: {
+  categories: [2014, 2015, 2016, 2017, 2018, 2019]
+},
+yAxis: {
+  title: {
+    text: 'Temperature (°C)'
+  }
+},
+plotOptions: {
+  line: {
+    dataLabels: {
+      enabled: true
+    },
+    enableMouseTracking: false
+  }
+},
+series: [{
+  name: 'Kansas State University',
+  data: [20128, 19705, 19477, 18710, 18093, 17528]
+}, {
+  name: 'University of Kansas',
+  data: [21509, 21590, 21626, 21610, 21505, 21329]
+},{
+  name: 'Wichita State University',
+  data:  [11395,11092,11060,11109,11285, 11397]
+}
+
+
+
+]
+});
+
+
+</script>
+
+    <p>According to a press release sent out on Wednesday by K-State, the university saw a record increase in freshmen to sophomore retention and near-record graduation rates. The university also recorded increased enrollment at the Global, Polytechnic and Olathe campuses.</p>
+
+    <p>“We’ve completely revamped our scholarship programs and are finding new ways to increase the value of our already excellent degrees,” Provost Charles Taber said to K-State News. “Higher education has been proven to be one of the best investments a person can make — with demonstrably proven increased lifetime earnings and quality of life. The prosperity of our state and country depends on a well-educated populace.”</p>
+
+    <p>Taber went on to say he feels the university is on track with the strategic enrollment plan.</p>
+
+<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+Highcharts.chart('container2', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Fall Preliminary (20th Day) Enrollment Summary for: Full-time Equivalency 2014-2019'
+    },
+    xAxis: {
+        categories: ["Emporia State University",
+"Fort Hays State University",
+"Kansas State University",
+"Pittsburg State University",
+"University of Kansas",
+"Wichita State University",
+"State University Total"]
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'One Year Change',
+        data: [-0.0171,
+0.0094,
+-0.0312,
+-0.024,
+-0.0082,
+0.0099,
+-0.0098]
+    }, {
+        name: 'Five Years Change',
+        data: [-0.0449,
+0.1057,
+-0.1292,
+-0.1336,
+-0.0083,
+0.0001,
+-0.0352]
+    }]
+});
+</script>
+
+    <p>The Regents also track enrollment numbers for municipal universities, community colleges and technical colleges. Of all public post-secondary education types available in Kansas, technical colleges were the only options that did not report enrollment dips.</p>
+
+    <p>Technical colleges recorded a near 6 percent increase in total headcount enrollment since fall 2018 and a 42.48 percent growth over a five year period.</p>
+
+
+
+  </body>
+</html>
